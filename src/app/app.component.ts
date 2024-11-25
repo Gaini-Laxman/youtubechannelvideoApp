@@ -39,6 +39,10 @@ export class AppComponent {
       {
         videoId: 'F2aOWwSCnYc',
         title: ' Arrays, String, StringBuffer, StringBuffer'
+      },
+      {
+        videoId: 'y7W9Q3OwGvQ',
+        title: ' Arrays, String, StringBuffer, StringBuffer'
       }
     
   ];
