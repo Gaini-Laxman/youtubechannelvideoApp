@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+/* Style the container with padding and center alignment */
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the video list as a flex container for horizontal layout */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;  /* Allow the items to wrap to the next row */
+  justify-content: center; /* Center the items horizontally */
+  margin: 0;
+}
+
+/* Style each video list item to display 2 videos per row */
+li {
+  margin: 15px;
+  width: calc(50% - 30px); /* Make each video 50% of the container width */
+  box-sizing: border-box; /* To include padding in the width calculation */
+  transition: transform 0.3s ease; /* Add a transition effect */
+}
+
+li:hover {
+  transform: scale(1.05); /* Slightly scale up the video when hovered */
+}
+
+/* Make iframe responsive to container size */
+iframe {
+  width: 100%; /* Make iframe fill the available width */
+  height: 315px; /* Set a fixed height */
+  border: none;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style for the video title */
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* For smaller screens, stack the videos vertically with 2 per row */
+@media (max-width: 768px) {
+  li {
+    width: calc(50% - 30px); /* 2 videos per row on medium screens */
+  }
+}
+
+/* For very small screens, stack the videos in a single column */
+@media (max-width: 480px) {
+  li {
+    width: 100%; /* 1 video per row on small screens */
+  }
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #007bff; /* Blue background */
+  color: #f2f2f2; /* Light text color */
+  padding: 10px 0; /* Add some padding for spacing */
+  text-align: center; /* Center align the text */
+  font-size: 14px; /* Smaller font size for the footer */
+  height: auto; /* Make sure the height adjusts according to content */
+}
+
+footer p {
+  margin: 5px 0; /* Reduce the margin between paragraphs */
+}
+
+footer a {
+  text-decoration: none; /* Remove underline from links */
+  color: #f2f2f2; /* White color for links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}

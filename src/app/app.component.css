@@ -1,0 +1,23 @@
+/* Footer Styling */
+footer {
+    background-color: #007bff; /* Blue background */
+    color: #f2f2f2; /* Light text color */
+    padding: 10px 0; /* Add some padding for spacing */
+    text-align: center; /* Center align the text */
+    font-size: 14px; /* Smaller font size for the footer */
+    height: auto; /* Make sure the height adjusts according to content */
+  }
+  
+  footer p {
+    margin: 5px 0; /* Reduce the margin between paragraphs */
+  }
+  
+  footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f2f2f2; /* White color for links */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Add underline on hover for links */
+  }
+  
