@@ -43,7 +43,44 @@ export class AppComponent {
       {
         videoId: 'y7W9Q3OwGvQ',
         title: ' Arrays, String, StringBuffer, StringBuffer'
-      }
+      },
+      {
+        videoId: 'SIj6nvYhshg',
+        title: ' Chapter- 5: OOPS (Part  1), OOPS Introduction'
+      },
+      {
+        videoId: 'Qa0S7Xr5Yfo',
+        title: 'Chapter- 5: OOPS (Part 1), Variables, Instance, Static, Local, Methods'
+      },
+      {
+        videoId: 'xwe6fLcZNS4',
+        title: 'Chapter- 5: OOPS (Part  1), Variables, Instance, Static, Local, Methods'
+      },
+      {
+        videoId: 'eheuAEmVwpM',
+        title: 'Chapter- 5: OOPS (Part  1), Variables, Instance, Static, Local, Methods'
+      },
+      {
+        videoId: '1iGgSMw9ZPY',
+        title: 'Chapter- 5: OOPS (Part  1), Types of relation ship in Java'
+      },
+      {
+        videoId: '1HUtCpFUlko',
+        title: 'Chapter  6 : OOPS (Part 2)'
+      },
+      {
+        videoId: '5gGwgKBgRdI',
+        title: 'Java Springboot'
+      },
+      {
+        videoId: 'FBRnx3FsfP8',
+        title: 'Java Springboot, EmployeeRestAPI'
+      },
+      {
+        videoId: 'gPp2NjE_fUY',
+        title: 'Solid Principle'
+      },
+
     
   ];
 }
