@@ -9,7 +9,7 @@ footer {
   }
   
   footer p {
-    margin: 5px 0; /* Reduce the margin between paragraphs */
+    margin: 1px 0; /* Reduce the margin between paragraphs */
   }
   
   footer a {
@@ -19,5 +19,6 @@ footer {
   
   footer a:hover {
     text-decoration: underline; /* Add underline on hover for links */
+    
   }
   
