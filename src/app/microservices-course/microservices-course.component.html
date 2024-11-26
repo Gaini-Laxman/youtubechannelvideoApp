@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservices Course</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h2>Microservices Course</h2>
+        <p>Welcome to the Microservices course. In this course, we will explore the key concepts behind Microservices Architecture and how to implement it using technologies like Spring Boot and Spring Cloud. You'll also learn the differences between Monolithic and Microservices architectures and how to develop scalable applications.</p>
+
+        <!-- Microservices Course Content -->
+        <div class="course-content">
+            <h3>What is Monolith Architecture?</h3>
+            <p>If we develop all the functionalities in a single project, then it is called a Monolith architecture-based application.</p>
+            <p>We package the application as a jar/war to deploy it on the server.</p>
+            <p>Since the monolith application contains all the functionalities, it will become a large jar/war file.</p>
+
+            <h4>Advantages of Monolith Architecture:</h4>
+            <ul>
+                <li>Simple to develop</li>
+                <li>Everything is available in one place</li>
+                <li>Configuration is required only once</li>
+            </ul>
+
+            <h4>Disadvantages of Monolith Architecture:</h4>
+            <ul>
+                <li>Difficult to maintain</li>
+                <li>Dependencies among the functionalities</li>
+                <li>Single point of failure</li>
+                <li>Entire project needs re-deployment</li>
+            </ul>
+
+            <h4>Microservices to Overcome Monolithic Issues:</h4>
+            <p>To overcome the problems of Monolithic architecture, Microservices architecture was introduced.</p>
+            <p>Microservices is not a programming language, framework, or API. It is an architectural design pattern.</p>
+            <p>In Microservices, application functionalities are developed with loose coupling. We don't develop all the functionalities in a single project but divide them into several REST APIs. One REST API is called one Microservice.</p>
+
+            <h4>Advantages of Microservices:</h4>
+            <ul>
+                <li>Loosely Coupled</li>
+                <li>Easy to maintain</li>
+                <li>Faster development</li>
+                <li>Quick deployment</li>
+                <li>Faster releases</li>
+                <li>Less downtime</li>
+                <li>Technology independence</li>
+            </ul>
+
+            <h4>Disadvantages of Microservices:</h4>
+            <ul>
+                <li>Bounded context (deciding the number of services)</li>
+                <li>Lots of configurations</li>
+                <li>Visibility</li>
+                <li>Managing many services (Pack of cards)</li>
+            </ul>
+
+            <h3>Microservices Architecture</h3>
+            <p>Microservices architecture does not have a fixed structure. It can be customized based on the project requirements. However, most Microservices projects will use the following components:</p>
+            <ul>
+                <li>Service Registry (Eureka Server)</li>
+                <li>Services (REST APIs)</li>
+                <li>Interservice Communication (FeignClient)</li>
+                <li>API Gateway</li>
+                <li>Admin Server</li>
+                <li>Zipkin</li>
+            </ul>
+
+            <h4>Service Registry</h4>
+            <p>Service Registry acts as the database of services available in the project. It provides the details of all registered services. We can use Eureka Server as the service registry, which is provided by Spring Cloud Netflix.</p>
+
+            <h4>Backend Services</h4>
+            <p>In the project, services are essentially REST APIs. They contain the backend business logic and interact with the database or third-party APIs. For inter-service communication, we can use FeignClient. Multiple instances of a service can run for load balancing.</p>
+
+            <h4>API Gateway</h4>
+            <p>API Gateway is used to manage the backend APIs. It acts as a mediator between end-users and backend APIs. It contains routing and filter logic (such as authentication) and is registered with the service registry. Spring Cloud Gateway can be used as the API Gateway.</p>
+
+            <h4>Admin Server</h4>
+            <p>Admin Server helps in managing backend APIs' actuator endpoints. It provides a user interface to monitor these endpoints.</p>
+
+            <h4>Zipkin Server</h4>
+            <p>Zipkin Server is used for Distributed Tracing. It allows us to monitor which API is taking more time to process requests, helping to identify performance bottlenecks.</p>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="register-form">
+            <h3>Register for the Microservices Course</h3>
+            <form id="registrationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Microservices Course. All rights reserved.</p>
+        <p>Contact Us: <a href="mailto:info@microservicescourse.com">info&#64;microservicescourse.com</a></p>
+    </footer>
+</body>
+</html>

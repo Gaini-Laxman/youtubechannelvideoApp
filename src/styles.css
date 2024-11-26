@@ -1,42 +1,162 @@
-/* Style the container with padding and center alignment */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body and Container */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
 .container {
-  text-align: center;
-  padding: 20px;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-/* Style the video list as a flex container for horizontal layout */
+h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+h3, h4 {
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Course Content */
+.course-content {
+  margin-bottom: 30px;
+}
+
 ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;  /* Allow the items to wrap to the next row */
-  justify-content: center; /* Center the items horizontally */
-  margin: 0;
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-/* Style each video list item to display 2 videos per row */
+/* Registration Form */
+.register-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.register-form label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.register-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .register-form {
+    padding: 15px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .register-form button {
+    font-size: 1rem;
+  }
+}
+
+/* Video Content (Optional section if included) */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between items */
+  padding-left: 0;
+  list-style-type: none;
+}
+
 li {
   margin: 15px;
-  width: calc(50% - 30px); /* Make each video 50% of the container width */
-  box-sizing: border-box; /* To include padding in the width calculation */
-  transition: transform 0.3s ease; /* Add a transition effect */
+  width: calc(50% - 30px); /* Ensures two items per row */
+  box-sizing: border-box;
 }
 
-li:hover {
-  transform: scale(1.05); /* Slightly scale up the video when hovered */
-}
-
-/* Make iframe responsive to container size */
 iframe {
-  width: 100%; /* Make iframe fill the available width */
-  height: 315px; /* Set a fixed height */
+  width: 100%;
+  height: 315px;
   border: none;
-  border-radius: 10px; /* Add rounded corners */
+  border-radius: 10px;
 }
 
-/* Style for the video title */
 h3 {
   font-size: 20px;
   color: #333;
@@ -45,171 +165,270 @@ h3 {
   font-weight: bold;
 }
 
-/* For smaller screens, stack the videos vertically with 2 per row */
-@media (max-width: 768px) {
-  li {
-    width: calc(50% - 30px); /* 2 videos per row on medium screens */
-  }
+/* Home Image Styling (Optional section if included) */
+.home-image {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
-
-/* For very small screens, stack the videos in a single column */
-@media (max-width: 480px) {
-  li {
-    width: 100%; /* 1 video per row on small screens */
-  }
-}
-
-
-/* Footer Styling */
-footer {
-  background-color: #007bff; /* Blue background */
-  color: #f2f2f2; /* Light text color */
-  padding: 10px 0; /* Add some padding for spacing */
-  text-align: center; /* Center align the text */
-  font-size: 14px; /* Smaller font size for the footer */
-  height: auto; /* Make sure the height adjusts according to content */
-}
-
-footer p {
-  margin: 5px 0; /* Reduce the margin between paragraphs */
-}
-
-footer a {
-  text-decoration: none; /* Remove underline from links */
-  color: #f2f2f2; /* White color for links */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Add underline on hover for links */
-}
-
-
 
 /* General Reset */
-body {
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Navigation Bar */
-.topnav {
-  overflow: hidden;
-  background-color: blue;
+/* Body and Layout */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  margin-bottom: 30px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: red;
+header h2 {
+  font-size: 2.5rem;
+  color: #4CAF50;
 }
 
-.topnav a.active {
-  background-color: red;
-  color: white;
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #555;
 }
 
-.topnav .icon {
-  display: none;
+/* Course Content Section */
+.course-content {
+  margin-bottom: 40px;
 }
 
-/* Dropdown Menu */
-.dropdown {
-  float: left;
-  overflow: hidden;
+.course-content h3 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
 }
 
-.dropdown .dropbtn {
-  background-color: blue;
-  color: white;
-  padding: 14px 16px;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+.course-content h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: blue;
-  min-width: 160px;
-  z-index: 1;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-  top: 50px;
+.course-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  border-bottom: 1px solid #ddd;
+.course-content ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: red;
+/* Registration Form Styling */
+.register-form {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.register-form h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.dropdown-content a:last-child {
-  border-bottom: none;
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) { display: none; }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive { position: relative; }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Footer Styles */
-footer {
-  background-color: blue;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px;
-  position: fixed;
-  bottom: 0;
+.register-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
   width: 100%;
 }
 
-footer p {
-  margin: 0;
+.register-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
 }
 
-/* Styling for the company image */
-.home-image {
-  width: 100px; /* Set the width of the image */
-  height: auto;
-  margin-top: 20px; /* Optional, add space above the image */
+.register-form button:hover {
+  background-color: #45a049;
 }
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .register-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 1rem;
+  }
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+p, ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Code block */
+pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  h2, h3, h4 {
+      font-size: 1.5rem;
+  }
+
+  p, ul {
+      font-size: 1rem;
+  }
+}
+
 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Overview</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Spring Boot</h2>
+        <p>Spring Boot is an approach to develop Spring-based applications with minimal configurations. It simplifies the process of setting up and deploying Spring applications by offering auto-configuration, embedded servers, and production-ready features.</p>
+
+        <div class="course-content">
+            <h3>Types of Applications You Can Develop with Spring Boot:</h3>
+            <ul>
+                <li>Standalone applications</li>
+                <li>Web applications</li>
+                <li>Distributed systems (Web services)</li>
+            </ul>
+
+            <h3>Advantages of Spring Boot:</h3>
+            <ul>
+                <li><strong>Starter POM</strong> - Simplifies Maven/Gradle build configuration:</li>
+                <ul>
+                    <li>web-starter</li>
+                    <li>datajpa-starter</li>
+                    <li>security-starter</li>
+                    <li>mail-starter</li>
+                </ul>
+
+                <li><strong>Auto Configuration</strong> - Automatically detects the necessary configurations for the application:</li>
+                <ul>
+                    <li>Creating DB connection pool</li>
+                    <li>Deploy web apps on embedded servers</li>
+                    <li>Start IOC container</li>
+                    <li>Component scanning</li>
+                </ul>
+
+                <li><strong>Actuators</strong> - Monitor and manage the application:</li>
+                <ul>
+                    <li>How many beans are loaded?</li>
+                    <li>How many URL patterns are mapped?</li>
+                    <li>Configuration properties loaded?</li>
+                    <li>Application health status</li>
+                    <li>Heap dump</li>
+                    <li>Thread dump</li>
+                </ul>
+
+                <li><strong>Embedded Servers</strong> - Provides embedded servers to run Spring Boot applications:</li>
+                <ul>
+                    <li>Apache Tomcat (default)</li>
+                    <li>Jetty</li>
+                    <li>Netty</li>
+                </ul>
+            </ul>
+
+            <h3>Creating a Spring Boot Application:</h3>
+            <ul>
+                <li><strong>Initializr Website</strong> - Use the <a href="https://start.spring.io" target="_blank">Spring Initializr</a> to create a Spring Boot project easily.</li>
+                <li><strong>IDE</strong> - IDEs like IntelliJ, Eclipse, or Spring Tool Suite connect to Spring Initializr internally to create Spring Boot projects.</li>
+            </ul>
+
+            <h4>Spring Boot =</h4>
+            <p>Spring (XML configurations) + Auto Configuration + Embedded Servers + Actuators</p>
+
+            <h3>What is the Start Class in Spring Boot?</h3>
+            <p>The start class is the entry point for boot application execution. It is also known as the main class in Spring Boot.</p>
+          
+            <p><strong>&#64;SpringBootApplication</strong> is equivalent to the following three annotations:</p>
+            <ul>
+                <li>&#64;SpringBootConfiguration &#64;Configuration</li>
+                <li>&#64;EnableAutoConfiguration</li>
+                <li>&#64;ComponentScan</li>
+            </ul>
+
+            <h3>How does IOC Start in Spring Boot?</h3>
+            <p>The IOC container is started through the <code>SpringApplication.run()</code> method.</p>
+            <ul>
+                <li><strong>boot-starter:</strong> AnnotationConfigApplicationContext</li>
+                <li><strong>web-starter:</strong> AnnotationConfigServletWebServerApplicationContext</li>
+                <li><strong>starter-webflux:</strong> AnnotationConfigReactiveWebServerApplicationContext</li>
+            </ul>
+
+            <h3>What is Banner in Spring Boot?</h3>
+            <p>The Spring logo that appears in the console when you start a Spring Boot application is called the "banner."</p>
+            <h4>There are three banner modes:</h4>
+            <ul>
+                <li><strong>console (default)</strong>: Prints on the console</li>
+                <li><strong>log</strong>: Prints in the log file</li>
+                <li><strong>off</strong>: Doesn't print the banner</li>
+            </ul>
+            <p>You can configure the banner mode in <code>application.properties</code>:</p>
+            <pre>spring.main.banner-mode=off</pre>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Spring Boot Overview. All rights reserved.</p>
+            <p>Contact Us: <a href="mailto:info@springboot.com">info&#64;springboot.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>

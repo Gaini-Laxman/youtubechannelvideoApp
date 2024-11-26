@@ -1,0 +1,29 @@
+<div class="create-blog-form">
+    <h2>Create a New Blog</h2>
+    <input type="text" #blogTitle class="input-field" placeholder="Enter blog title">
+    <textarea #blogContent class="input-field" placeholder="Enter blog content (e.g., <h2>Your Heading</h2><ul><li>Point 1</li></ul>)"></textarea>
+    <button (click)="createBlog(blogTitle.value, blogContent.value)" class="create-btn">Create Blog</button>
+  </div>
+  
+  <div id="blogs-list">
+    <div *ngFor="let blog of blogs" class="blog-container">
+      <div class="blog-post">
+        <h2>{{ blog.title }}</h2>
+        <p [innerHTML]="blog.content"></p> <!-- Render HTML content here -->
+        <button (click)="deleteBlog(blog.id)" class="delete-btn">Delete Blog</button>
+      </div>
+  
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <div class="comment-form">
+          <input type="text" #commentInput class="comment-input" placeholder="Add a comment">
+          <button (click)="addComment(blog.id, commentInput.value)" class="comment-btn">Add Comment</button>
+        </div>
+  
+        <ul class="comments-list">
+          <li *ngFor="let comment of blog.comments" class="comment-item">{{ comment }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
