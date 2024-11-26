@@ -11,6 +11,8 @@ import { SpringbootCourseComponent } from './springboot-course/springboot-course
 import { MicroservicesCourseComponent } from './microservices-course/microservices-course.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BlogComponent } from './blog/blog.component';
     SpringbootCourseComponent,
     MicroservicesCourseComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { SpringCourseComponent } from './spring-course/spring-course.component';
 import { SpringbootCourseComponent } from './springboot-course/springboot-course.component';
 import { MicroservicesCourseComponent } from './microservices-course/microservices-course.component';
 import { BlogComponent } from './blog/blog.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'courses/spring', component: SpringCourseComponent },
   { path: 'courses/springboot', component: SpringbootCourseComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'courses/microservices', component: MicroservicesCourseComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
