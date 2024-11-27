@@ -86,7 +86,7 @@ export class HomeComponent {
       },
 	  {
         videoId: 'sf2OioXZBgk',
-        title: 'Final, wrt primitive Data types, wrt refernce type, widening(Lower to higher)(implicit), narrowing(Higher to lower)(explicit)'
+        title: 'Interface, Abstract class'
       },
 
     
