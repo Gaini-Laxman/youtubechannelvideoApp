@@ -22,7 +22,7 @@ export class HomeComponent {
     },
     {
       videoId: 'rYPEfz1c0ec',
-      title: 'Reserved keyWords, Java Coding Standards, Java comments, Reading Data From keyboards'
+      title: 'Reserved keyWords'
     },
     {
       videoId: 'vC0xywgc9Yk',
@@ -82,13 +82,16 @@ export class HomeComponent {
       },
       {
         videoId: 'DGgePbVaJ6E',
-        title: 'Final, wrt primitive Data types, wrt refernce type, widening(Lower to higher)(implicit), narrowing(Higher to lower)(explicit)'
+        title: 'Chapter  6 Final, Data types,'
       },
 	  {
         videoId: 'sf2OioXZBgk',
-        title: 'Interface, Abstract class'
+        title: 'Chapter  6 Interface, Abstract class'
       },
-
+      {
+        videoId: 'CZ3WUpXaszo',
+        title: 'Chapter  6  Object Class Methods'
+      },
     
   ];
 }
