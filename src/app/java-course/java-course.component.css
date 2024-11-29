@@ -122,3 +122,21 @@ footer a {
         height: 250px;
     }
 }
+
+
+.download-btn {
+    display: inline-block;  /* Allows you to set width and height */
+    width: 200px;           /* Set the desired width */
+    height: 50px;           /* Set the desired height */
+    background-color: #4CAF50;  /* Green background color */
+    color: white;           /* White text */
+    text-align: center;     /* Centers the text */
+    line-height: 50px;      /* Vertically centers the text inside the button */
+    border-radius: 5px;     /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+    font-size: 16px;        /* Font size */
+}
+
+.download-btn:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}

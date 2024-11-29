@@ -92,6 +92,10 @@ export class HomeComponent {
         videoId: 'CZ3WUpXaszo',
         title: 'Chapter  6  Object Class Methods'
       },
+	  {
+        videoId: 'VJLKdMEa_9Y',
+        title: 'Chapter  7  Package and Wrapper Class'
+      },
     
   ];
 }
