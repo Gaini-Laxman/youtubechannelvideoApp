@@ -96,6 +96,10 @@ export class HomeComponent {
         videoId: 'VJLKdMEa_9Y',
         title: 'Chapter  7  Package and Wrapper Class'
       },
+	  {
+        videoId: 'Ri9syJwANZM',
+        title: 'Chapter  7  Exception'
+      },
     
   ];
 }
