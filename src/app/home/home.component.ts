@@ -102,7 +102,7 @@ export class HomeComponent {
       },
 	  {
         videoId: 'sR9DsEFSoqI',
-        title: 'Chapter  7  Exception'
+        title: 'Chapter  8 Collection framework'
       },
     
 	
