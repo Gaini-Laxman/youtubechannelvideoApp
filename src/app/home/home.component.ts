@@ -100,6 +100,11 @@ export class HomeComponent {
         videoId: 'Ri9syJwANZM',
         title: 'Chapter  7  Exception'
       },
+	  {
+        videoId: 'sR9DsEFSoqI',
+        title: 'Chapter  7  Exception'
+      },
     
+	
   ];
 }
