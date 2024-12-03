@@ -117,11 +117,6 @@ body {
 }
 
 /* Styling for the image in the home section */
-.home-image {
-  width: 100px;
-  height: auto;
-  margin-top: 20px;
-}
 
 /* Scrolling container */
 .scrolling-container {
@@ -369,9 +364,6 @@ body {
       font-size: 14px;
     }
   
-    .home-image {
-      width: 80px;
-    }
   }
   
   /* Mobile Screens */
