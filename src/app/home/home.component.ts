@@ -104,6 +104,11 @@ export class HomeComponent {
         videoId: 'sR9DsEFSoqI',
         title: 'Chapter  8 Collection framework'
       },
+	  {
+        videoId: 'Z132qwI0jKU',
+        title: 'Chapter  8 Collection(LinkedList, ArrayList, Vectors, Stack)'
+      },
+	  
     
 	
   ];
