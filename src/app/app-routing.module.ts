@@ -11,11 +11,13 @@ import { MicroservicesCourseComponent } from './microservices-course/microservic
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'courses/java', component: JavaCourseComponent },
   { path: 'courses/html', component: HtmlCourseComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'courses/css', component: CssCourseComponent },
   { path: 'courses/angular', component: AngularCourseComponent },
   { path: 'courses/spring', component: SpringCourseComponent },

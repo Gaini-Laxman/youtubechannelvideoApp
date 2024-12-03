@@ -1,158 +1,104 @@
+<header>
+    <div class="header-content">
+        <h1>Angular Course</h1>
+        <div class="course-info">
+            <p class="Course-Fee">Course Fee: ₹2200.0</p><br>
+            <a href="https://rzp.io/rzp/BXvTOkpr" target="_blank">
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+            <!-- Button for navigating to registration page -->
+            <button class="register-btn" (click)="navigateToRegister()">Register</button>
+        </div>
+    </div>
+</header>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-adsense-account" content="ca-pub-6557551457522385">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular Overview</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .content {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .code {
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            padding: 10px;
-            font-family: monospace;
-            white-space: pre-wrap;
-        }
-    </style>
+    <!-- You can link to an external CSS file here if needed -->
 </head>
 <body>
-    <h1>Angular Overview</h1>
 
-    <div class="section">
-        <h2>Introduction</h2>
-        <div class="content">
-            <ul>
-                <li>Angular is a client-side framework developed by Google.</li>
-                <li>It is built using TypeScript and mainly used for building Single Page Applications (SPAs).</li>
-                <li>Angular supports mobile and desktop devices, and multiple browsers.</li>
-                <li>Angular is free and open-source.</li>
-                <li>Angular 2+ is referred to as the Angular framework (not AngularJS).</li>
-            </ul>
-        </div>
-    </div>
+   
 
-    <div class="section">
-        <h2>Angular Building Blocks</h2>
-        <div class="content">
-            <ul>
-                <li><strong>Components:</strong> Core unit of Angular applications. They contain logic, data, and view.</li>
-                <li><strong>Metadata:</strong> Provides information about components and templates.</li>
-                <li><strong>Template:</strong> The HTML file that defines the view for a component.</li>
-                <li><strong>Data Binding:</strong> Binding data between the component and the view.</li>
-                <li><strong>Module:</strong> A collection of components, directives, and services.</li>
-                <li><strong>Service:</strong> Contains reusable business logic injected into components via Dependency Injection.</li>
-                <li><strong>Dependency Injection:</strong> Injecting services into components.</li>
-                <li><strong>Directives:</strong> Manipulate DOM elements in templates (e.g., loops, conditionals).</li>
-                <li><strong>Pipes:</strong> Transform data before displaying (e.g., format date, change case).</li>
-            </ul>
-        </div>
-    </div>
+        <h1>Angular Overview</h1>
 
-    <div class="section">
-        <h2>Environment Setup for Angular</h2>
-        <div class="content">
-            <ol>
-                <li>Install <a href="https://nodejs.org/en/" target="_blank">Node.js</a>.</li>
-                <li>Install TypeScript using <code>npm install -g typescript</code>.</li>
-                <li>Install Angular CLI using <code>npm install info&#64;angular/cli -g</code>.</li>
-                <li>Install Visual Studio Code from <a href="https://code.visualstudio.com/download" target="_blank">VS Code website</a>.</li>
-            </ol>
-            <p>Once installed, verify installations:</p>
-            <ul>
-                <li><code>node -v</code> to check Node.js version.</li>
-                <li><code>tsc -v</code> to check TypeScript version.</li>
-                <li><code>ng v</code> to check Angular CLI version.</li>
-            </ul>
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2>Introduction</h2>
+            <div class="content">
+                <ul>
+                    <li>Angular is a client-side framework developed by Google.</li>
+                    <li>It is built using TypeScript and mainly used for building Single Page Applications (SPAs).</li>
+                    <li>Angular supports mobile and desktop devices, and multiple browsers.</li>
+                    <li>Angular is free and open-source.</li>
+                    <li>Angular 2+ is referred to as the Angular framework (not AngularJS).</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="section">
-        <h2>Creating and Running an Angular Application</h2>
-        <div class="content">
-            <ol>
-                <li>Create a workspace folder and navigate to it.</li>
-                <li>Run the following command to create a new Angular application:
-                    <code>ng new <strong>&lt;app-name&gt;</strong></code>
-                </li>
-                <li>Navigate into the application folder and run:
-                    <code>ng serve</code>
-                </li>
-                <li>Visit the application at <a href="http://localhost:4200" target="_blank">http://localhost:4200/</a>.</li>
-            </ol>
+        <!-- Angular Building Blocks Section -->
+        <div class="section">
+            <h2>Angular Building Blocks</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>Components:</strong> Core unit of Angular applications. They contain logic, data, and view.</li>
+                    <li><strong>Metadata:</strong> Provides information about components and templates.</li>
+                    <li><strong>Template:</strong> The HTML file that defines the view for a component.</li>
+                    <li><strong>Data Binding:</strong> Binding data between the component and the view.</li>
+                    <li><strong>Module:</strong> A collection of components, directives, and services.</li>
+                    <li><strong>Service:</strong> Contains reusable business logic injected into components via Dependency Injection.</li>
+                    <li><strong>Dependency Injection:</strong> Injecting services into components.</li>
+                    <li><strong>Directives:</strong> Manipulate DOM elements in templates (e.g., loops, conditionals).</li>
+                    <li><strong>Pipes:</strong> Transform data before displaying (e.g., format date, change case).</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="section">
-        <h2>Angular Core Packages</h2>
-        <div class="content">
-            <ul>
-                <li><code>info&#64;angular/core:</code> Provides classes and interfaces for decorators, components, and Dependency Injection (DI).</li>
-                <li><code>info&#64;angular/common:</code> Provides common directives and pipes.</li>
-                <li><code>info&#64;angular/compiler:</code> Used to compile templates into JavaScript code.</li>
-                <li><code>info&#64;angular/platform-browser:</code> Provides runtime services to run Angular in the browser.</li>
-                <li><code>info&#64;angular/forms:</code> Used for creating two-way data bindings and validations.</li>
-                <li><code>info&#64;angular/router:</code> Provides routing (page navigation) functionality in Angular apps.</li>
-                <li><code>info&#64;angular/http:</code> Used for sending HTTP requests to the server.</li>
-                <li><code>info&#64;angular/animations:</code> Used to create animations in Angular apps.</li>
-                <li><code>info&#64;angular/material:</code> Angular Material Design components.</li>
-                <li><code>info&#64;angular/cdk:</code> The Component Dev Kit (CDK) for Material Design.</li>
-            </ul>
+        <!-- Environment Setup Section -->
+        <div class="section">
+            <h2>Environment Setup for Angular</h2>
+            <div class="content">
+                <ol>
+                    <li>Install <a href="https://nodejs.org/en/" target="_blank">Node.js</a>.</li>
+                    <li>Install TypeScript using <code>npm install -g typescript</code>.</li>
+                    <li>Install Angular CLI using <code>npm install -g &#64;angular/cli</code>.</li>
+                    <li>Install Visual Studio Code from <a href="https://code.visualstudio.com/download" target="_blank">VS Code website</a>.</li>
+                </ol>
+                <p>Once installed, verify installations:</p>
+                <ul>
+                    <li><code>node -v</code> to check Node.js version.</li>
+                    <li><code>tsc -v</code> to check TypeScript version.</li>
+                    <li><code>ng v</code> to check Angular CLI version.</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="section">
-        <h2>Creating Components</h2>
-        <div class="content">
-            <p>Components are essential building blocks of Angular applications. Here's how to define a basic component:</p>
-            
-            <p>This component is defined by the <code>info&#64;Component</code> decorator, with properties for the selector, template, and styles.</p>
+        <!-- Creating and Running Angular Application Section -->
+        <div class="section">
+            <h2>Creating and Running an Angular Application</h2>
+            <div class="content">
+                <ol>
+                    <li>Create a workspace folder and navigate to it.</li>
+                    <li>Run the following command to create a new Angular application:
+                        <code>ng new &lt;app-name&gt;</code>
+                    </li>
+                    <li>Navigate into the application folder and run:
+                        <code>ng serve</code>
+                    </li>
+                    <li>Visit the application at <a href="http://localhost:4200" target="_blank">http://localhost:4200/</a>.</li>
+                </ol>
+            </div>
         </div>
-    </div>
-
-    <div class="section">
-        <h2>Data Binding in Angular</h2>
-        <div class="content">
-            <p>Data binding connects the component to the template. There are four main types of data binding in Angular:</p>
-            <ul>
-                <li><strong>Interpolation:</strong> Display values from the component in the template.
-                    
-                </li>
-                <li><strong>Property Binding:</strong> Bind component data to HTML attributes.
-                    <pre class="code">[attribute]="propertyName"</pre>
-                </li>
-                <li><strong>Event Binding:</strong> Bind DOM events to component methods.
-                    <pre class="code">&lt;button (click)="methodName()"&gt;Click Me&lt;/button&gt;</pre>
-                </li>
-                <li><strong>Two-way Data Binding:</strong> Combines property and event binding using <code>ngModel</code>.
-                    <pre class="code">&lt;input [(ngModel)]="property"&gt;</pre>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 </body>
 </html>
-<!-- Footer Section -->
+
 <footer>
-    <p>&copy; 2024 ANGULAR Course. All rights reserved.</p>
-    <p>Contact Us: <a href="mailto:info@angularcourse.com">info&#64;htmlcourse.com</a></p>
+    <p>&copy; 2024 JavaFullStackGuru . All rights reserved.</p>
+      <p>Contact Us : <a href="mailto:gainilaxman2@gmil.com">gainilaxman2&#64;gmail.com</a></p>
+	 <p>Phone Number :<a href="tel:+9392291718" style="color: #f2f2f2;">+91 9392291718</a></p>
 </footer>

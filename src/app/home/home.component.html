@@ -95,7 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .topnav a.active {
-      background-color: #04AA6D;
+      background-color:blue;
       color: white;
     }
 
@@ -114,16 +114,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: blue;
       color: white;
       padding: 14px 16px;
-      font-size: 17px;
+      font-size: 20px;
       border: none;
       cursor: pointer;
     }
 
     /* Dropdown content, hidden by default */
     .dropdown-content {
-      display: none;
+      display: flexbox;
       position: absolute;
-      background-color: blue;
+      background-color: green;
       min-width: 160px;
       z-index: 1;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
@@ -172,6 +172,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="topnav" id="myTopnav">
     <!-- Correct Image Path -->
+    <a href="#home">
+      <img src="favicon.gif" alt="JavaFullstackGuru Logo" class="logo-image" />
+    </a>
     <a img src="assets/favicon.ico" alt="favicon.ico" class="logo-image"> </a><!-- Image source updated -->
     <a href="#home" class="active">Home</a>
     <a href="#news">News</a>
@@ -194,19 +197,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a routerLink="/blog" routerLinkActive="active">Blog</a>
 <a routerLink="/contact" routerLinkActive="active">Contact</a>
     <a routerLink="/about" routerLinkActive="active">About</a>
+	
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 
-  <div style="padding-left:16px">
-    <h2>JavaFullstackGuru</h2>
+  <div class="scrolling-container">
+    <p class="scrolling-text">Complete Fullstack Course and Earn Your Certificate! For Enquiry, Contact us +919392291718</p>
+</div>
 
-    <!-- Add the company image in the Home section -->
-    <!--<img src="assets/favicon.png" alt="favicon.png" class="home-image">  <!-- The image source points to src/assets/favicon.png -->
-  </div>
 
-  <div class="container">
+  <!-- <div class="container"> -->
     <h1>YouTube Video List</h1>
 
     <div *ngIf="videos.length > 0">
@@ -224,16 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
       </ul>
     </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 JavaFullstackGuru. All rights reserved.</p>
-    <p>Contact Us: 
-      <a href="mailto:gainilaxman2&#64;gmail.com" style="color: #f2f2f2;">gainilaxman2&#64;gmail.com</a> | 
-      <a href="tel:+9392291718" style="color: #f2f2f2;">+91 9392291718</a>
-    </p>
-  </footer>
+  <!-- </div> -->
 
   <script>
     function myFunction() {
@@ -247,3 +240,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </script>
 </body>
 </html>
+
+<footer>
+  <p>&copy; 2024 JavaFullstackGuru. All rights reserved.</p>
+  <p>Contact Us: 
+    <a href="mailto:gainilaxman2&#64;gmail.com" style="color: #f2f2f2;">gainilaxman2&#64;gmail.com</a> | 
+    <a href="tel:+9392291718" style="color: #f2f2f2;">+91 9392291718</a>
+  </p>
+</footer>

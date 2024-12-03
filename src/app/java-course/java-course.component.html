@@ -1,6 +1,21 @@
-<div class="container">
-    <h2>Java Course</h2>
-	<meta name="google-adsense-account" content="ca-pub-6557551457522385">
+
+    <!-- Header with Course Fee and Buy Now Button -->
+    <header>
+        <div class="header-content">
+            <h1>Java Course</h1>
+            <div class="course-info">
+                <p class="Course Fee">Course Fee : ₹2500.0 </p><hr/><hr/>
+                <a href="https://rzp.io/rzp/BXvTOkpr" target="_blank">
+                    <button class="buy-now-btn">Buy Now</button>
+                </a>
+                <button class="register-btn" (click)="navigateToRegister()">Register</button>
+
+            </div>
+        </div>
+    </header>
+
+    <meta name="google-adsense-account" content="ca-pub-6557551457522385">
+    
     <p>Welcome to the Java course. Here you'll learn about core Java programming concepts including variables, loops, conditionals, object-oriented programming (OOP), and much more. By the end of this course, you will be able to create fully functional Java applications!</p>
 
     <!-- Java Course Content -->
@@ -28,28 +43,7 @@
                 <h4>Introduction to Java Programming</h4>
                 <iframe src="https://www.youtube.com/embed/8cm1x4bC610" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
-            
         </ul>
-    </div>
-
-    <!-- Registration Form -->
-    <div class="register-form">
-        <h3>Register for the Java Course</h3>
-        <form id="registrationForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="Enter your password">
-
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
-
-            <button type="submit">Register</button>
-        </form>
     </div>
 
     <!-- PDF Download Link -->
@@ -58,10 +52,12 @@
         <p>Click below to download the Java course content in PDF format:</p>
         <a (click)="downloadPDF()" class="download-btn">Download PDF</a>
     </div>
-</div>
+
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Java Course. All rights reserved.</p>
-    <p>Contact Us: <a href="mailto:gainilaxman2@gmail.com">gainilaxman2&#64;.com</a></p>
+    <p>&copy; 2024 JavaFullStackGuru. All rights reserved.</p>
+    <p>Contact Us : <a href="mailto:gainilaxman2@gmail.com">gainilaxman2&#64;gmail.com</a></p>
+    <p>Phone Number : <a href="tel:+9392291718" style="color: #f2f2f2;">+91 9392291718</a>
+    </p>    
 </footer>

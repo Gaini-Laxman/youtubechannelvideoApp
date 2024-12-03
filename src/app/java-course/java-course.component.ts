@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-java-course',
@@ -14,4 +15,11 @@ export class JavaCourseComponent {
     link.download = 'java.pdf';
     link.click();
   }
+
+  constructor(private router: Router) {}
+
+  navigateToRegister(): void {
+    this.router.navigate(['/register']);
+  }
+
 }
