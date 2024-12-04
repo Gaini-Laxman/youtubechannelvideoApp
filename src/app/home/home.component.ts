@@ -112,7 +112,10 @@ export class HomeComponent {
         videoId: 'LOVSGVIwIsI',
         title: 'Bubble Sort and Reverse String Example Programs'
       },
-	  
+	  {
+        videoId: 'jJQBI63k0oE',
+        title: 'Chapter  8 Collection(Set Interface)'
+      },
 	  
     
 	
