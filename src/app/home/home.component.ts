@@ -108,6 +108,11 @@ export class HomeComponent {
         videoId: 'Z132qwI0jKU',
         title: 'Chapter  8 Collection(LinkedList, ArrayList, Vectors, Stack)'
       },
+	  {
+        videoId: 'LOVSGVIwIsI',
+        title: 'Bubble Sort and Reverse String Example Programs'
+      },
+	  
 	  
     
 	
