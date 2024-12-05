@@ -116,7 +116,10 @@ export class HomeComponent {
         videoId: 'jJQBI63k0oE',
         title: 'Chapter  8 Collection(Set Interface)'
       },
-	  
+	   {
+        videoId: 'OWhe5AA_8uQ',
+        title: 'Chapter  8 Collection(Queue, DeQueue Interface)'
+      },
     
 	
   ];
