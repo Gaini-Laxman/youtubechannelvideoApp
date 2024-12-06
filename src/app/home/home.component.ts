@@ -120,7 +120,10 @@ export class HomeComponent {
         videoId: 'OWhe5AA_8uQ',
         title: 'Chapter  8 Collection(Queue, DeQueue Interface)'
       },
-    
+    {
+        videoId: 'OMDYnGb7oUY',
+        title: 'Chapter  8 Collection(Map)'
+      },
 	
   ];
 }
