@@ -124,6 +124,12 @@ export class HomeComponent {
         videoId: 'OMDYnGb7oUY',
         title: 'Chapter  8 Collection(Map)'
       },
+	{
+        videoId: 'npELh3l0Bz4',
+        title: 'Chapter  9 Multi Thread'
+      },
+	
+	
 	
   ];
 }
