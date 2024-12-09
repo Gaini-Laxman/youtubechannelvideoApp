@@ -128,6 +128,11 @@ export class HomeComponent {
         videoId: 'npELh3l0Bz4',
         title: 'Chapter  9 Multi Thread'
       },
+	  {
+        videoId: 'DO5l9r8RXQ4',
+        title: 'Chapter  9 Multi Thread(Syncronization)'
+      },
+	  
 	
 	
 	
