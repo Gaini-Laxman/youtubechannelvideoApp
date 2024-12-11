@@ -138,7 +138,7 @@ export class HomeComponent {
       },
 	{
         videoId: 'yvHsI89Rjfc',
-        title: 'Chapter  9 Multi Thread'
+        title: 'Chapter  10 IO Stream'
       },
 	
 	
