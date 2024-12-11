@@ -136,7 +136,10 @@ export class HomeComponent {
         videoId: 'h9wpkJlKnaE',
         title: 'Chapter  9 Multi Thread'
       },
-	
+	{
+        videoId: 'yvHsI89Rjfc',
+        title: 'Chapter  9 Multi Thread'
+      },
 	
 	
   ];
