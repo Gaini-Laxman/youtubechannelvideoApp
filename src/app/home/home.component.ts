@@ -140,6 +140,10 @@ export class HomeComponent {
         videoId: 'yvHsI89Rjfc',
         title: 'Chapter  10 IO Stream'
       },
+	{
+        videoId: 'XigGsujeMMA',
+        title: 'Chapter  10 IO Stream(Serialization)'
+      }
 	
 	
   ];
