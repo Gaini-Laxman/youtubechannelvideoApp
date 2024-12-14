@@ -147,6 +147,10 @@ export class HomeComponent {
 	{
         videoId: 'jWOuMy9_EPk',
         title: 'Chapter  10 IO Stream(SerializationUID)'
+      },
+	  {
+        videoId: 'uoBr_VegwM0',
+        title: 'Chapter  11 Generics and Reflection API'
       }
 	
 	
