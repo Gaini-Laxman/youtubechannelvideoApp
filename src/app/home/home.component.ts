@@ -151,11 +151,14 @@ export class HomeComponent {
 	  {
         videoId: 'uoBr_VegwM0',
         title: 'Chapter  11 Generics and Reflection API'
-      }
-	  ,
+      },
 	  {
         videoId: 'QiSZkwvyxlQ',
         title: 'ADP Interview Questions'
+      },
+	  {
+        videoId: 'hFaQcr85rjc',
+        title: 'Wipro Interview Questions'
       }
 	
 	
