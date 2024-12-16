@@ -159,6 +159,10 @@ export class HomeComponent {
 	  {
         videoId: 'Mwy_kfo689o',
         title: 'Wipro Interview Questions'
+      },
+	  {
+        videoId: 'j_MpafVJgNQ',
+        title: 'Chapter  11 GC and Inner Class'
       }
 	
 	
