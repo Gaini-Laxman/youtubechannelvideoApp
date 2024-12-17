@@ -163,7 +163,13 @@ export class HomeComponent {
 	  {
         videoId: 'j_MpafVJgNQ',
         title: 'Chapter  11 GC and Inner Class'
+      },
+	  {
+        videoId: '	gjehHlHGLmA',
+        title: 'Chapter  12m Java 8 Features'
       }
+	
+	
 	
 	
   ];
