@@ -179,6 +179,10 @@ export class HomeComponent {
 	  {
         videoId: '	Hbmtwb6Scp0',
         title: 'Chapter  Java 11 Features'
+      },
+	  {
+        videoId: '	wZHvkT4RxXI',
+        title: 'Chapter  Java 17 Features'
       }
 	
 	
