@@ -186,11 +186,10 @@ export class HomeComponent {
       },
 	  {
         videoId: '	LHm1DYQ37ik',
-        title: 'CISCO Interview Questions'
+        title: 'CISCO Interview Questions Answers'
       }
 	
-	
-	
+
 	
   ];
 }
