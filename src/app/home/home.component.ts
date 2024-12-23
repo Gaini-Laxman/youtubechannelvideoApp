@@ -187,6 +187,10 @@ export class HomeComponent {
 	  {
         videoId: '	LHm1DYQ37ik',
         title: 'CISCO Interview Questions Answers'
+      },
+	  {
+        videoId: '	jWUT7XALElY',
+        title: 'Spring Framework ES1'
       }
 	
 
