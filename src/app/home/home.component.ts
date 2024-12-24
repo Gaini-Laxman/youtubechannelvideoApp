@@ -191,6 +191,10 @@ export class HomeComponent {
 	  {
         videoId: '	jWUT7XALElY',
         title: 'Spring Framework ES1'
+      },
+	  {
+        videoId: '	XWrfI-38GIk',
+        title: 'Spring Framework #ES2'
       }
 	
 
