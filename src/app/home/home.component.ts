@@ -199,6 +199,10 @@ export class HomeComponent {
 	  {
         videoId: '	_RBRcRydI44',
         title: 'Spring Framework #ES3'
+      },
+	  {
+        videoId: '	wMZRhVqlofo',
+        title: 'Spring Web MVC Architecture'
       }
 	
 
