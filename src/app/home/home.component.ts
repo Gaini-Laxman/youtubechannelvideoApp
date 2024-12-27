@@ -203,6 +203,10 @@ export class HomeComponent {
 	  {
         videoId: '	wMZRhVqlofo',
         title: 'Spring Web MVC Architecture'
+      },
+	  {
+        videoId: '	0714Y5zb17E',
+        title: 'Spring Web MVC Book App'
       }
 	
 
