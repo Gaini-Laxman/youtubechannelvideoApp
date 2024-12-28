@@ -221,21 +221,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h1>YouTube Video List</h1>
 
-    <div *ngIf="videos.length > 0">
-      <ul>
-        <li *ngFor="let video of videos">
-          <h3>{{ video.title }}</h3>
-          <iframe 
-            width="560" 
-            height="315" 
-            [src]="'https://www.youtube.com/embed/' + video.videoId | safeUrl" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </li>
-      </ul>
-    </div>
+<div *ngIf="videos.length > 0">
+  <ul>
+    <li *ngFor="let video of videos">
+      <h3>{{ video.title }}</h3>
+      <iframe 
+        width="560" 
+        height="315" 
+        [src]="'https://www.youtube.com/embed/' + video.videoId | safeUrl" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </li>
+  </ul>
+</div>
+
 
 <footer>
   <p>&copy; 2024 JavaFullstackGuru. All rights reserved.</p>
