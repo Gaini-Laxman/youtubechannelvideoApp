@@ -68,12 +68,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="canonical" href="https://youtubechannelvideo-app.vercel.app/home/courses/full-stack-development" />
 
 <style>
+  /* Default styles */
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* Navbar styles */
   .topnav {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     align-items: center;
     background-color: blue;
     padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
   }
 
   .topnav a {
@@ -105,7 +106,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height: auto;
   }
 
-  /* Dropdown menu */
   .dropdown {
     position: relative;
   }
@@ -148,19 +148,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     cursor: pointer;
   }
 
-  .scrolling-container {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-  }
-
-  /* Responsive styles */
+  /* Mobile-specific styles */
   @media screen and (max-width: 768px) {
     .topnav {
+      display: none; /* Hide header by default */
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    .topnav.show {
+      display: flex; /* Show header when toggled */
     }
 
     .topnav a {
@@ -171,13 +168,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .icon {
       display: block;
     }
-
-    .dropdown-content {
-      position: static;
-      width: 100%;
-    }
   }
 </style>
+
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.classList.contains("show")) {
+      x.classList.remove("show");
+    } else {
+      x.classList.add("show");
+    }
+  }
+</script>
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -189,9 +193,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#home">
     <img src="favicon1.gif" alt="JavaFullstackGuru Logo" class="logo-image">
   </a>
-  <a href="#home" class="active">Home</a>
-  <a href="#news">Updates</a>
-  <a href="#videos">Videos</a>
   <div class="dropdown">
     <button class="dropbtn">Courses</button>
     <div class="dropdown-content">
