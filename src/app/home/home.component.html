@@ -1,50 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Meta tags and other elements remain as is -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full Stack Development Courses | JavaFullstackGuru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <style>
-    /* Include all CSS changes from above */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Navbar styles */
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: blue;
+      padding: 10px 20px;
+    }
+
+    .topnav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: red;
+    }
+
+    .topnav a.active {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    .logo-image {
+      width: 100px;
+      height: auto;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 17px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Responsive menu button */
+    .icon {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* Scrolling text */
+    .scrolling-container {
+      background-color: #0056b3;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .topnav {
+        flex-direction: column;
+      }
+
+      .topnav a {
+        text-align: center;
+        padding: 15px;
+      }
+
+      .icon {
+        display: block;
+      }
+
+      .dropdown-content {
+        position: static;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <div class="topnav" id="myTopnav">
-    <a href="#home"><img src="favicon1.gif" alt="JavaFullstackGuru Logo" class="logo-image" /></a>
+  <!-- Navbar -->
+  <div class="topnav">
+    <a href="#home">
+      <img src="favicon1.gif" alt="Logo" class="logo-image">
+    </a>
     <a href="#home" class="active">Home</a>
     <a href="#news">Updates</a>
     <a href="#videos">Videos</a>
     <div class="dropdown">
       <button class="dropbtn">Courses</button>
       <div class="dropdown-content">
-        <!-- Add your course links here -->
+        <a href="/courses/java">Java</a>
+        <a href="/courses/html">HTML</a>
+        <a href="/courses/css">CSS</a>
+        <a href="/courses/angular">Angular</a>
+        <a href="/courses/springboot">SpringBoot</a>
+        <a href="/courses/microservices">Microservices</a>
+        <a href="/courses/cloud">Cloud</a>
+        <a href="/courses/reactjs">ReactJs</a>
       </div>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <a href="/book">Books</a>
+    <a href="/blog">Blog</a>
+    <a href="/contact">Contact</a>
+    <a href="/about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
   </div>
 
-  <!-- Content -->
+  <!-- Scrolling Text -->
   <div class="scrolling-container">
-    <p class="scrolling-text">Complete Fullstack Course and Earn Your Certificate! Contact us +91 9392291718</p>
+    Complete Fullstack Course and Earn Your Certificate! Contact us at +91 9392291718.
   </div>
 
   <h1>YouTube Video List</h1>
-  <div *ngIf="videos.length > 0">
+  <div id="videoList">
     <ul>
-      <li *ngFor="let video of videos">
-        <h3>{{ video.title }}</h3>
-        <div class="video-container">
-          <iframe 
-            [src]="'https://www.youtube.com/embed/' + video.videoId | safeUrl" 
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
-        </div>
+      <li>
+        <h3>Sample Video Title</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
       </li>
     </ul>
   </div>
 
+  <footer>
+    <p>&copy; 2024 JavaFullstackGuru. All rights reserved.</p>
+    <p>Contact Us: 
+      <a href="mailto:gainilaxman2@gmail.com">gainilaxman2@gmail.com</a> | 
+      <a href="tel:+919392291718">+91 9392291718</a>
+    </p>
+  </footer>
+
   <script>
-    // Add `myFunction` script here
+    function toggleMenu() {
+      const topnav = document.querySelector('.topnav');
+      topnav.classList.toggle('responsive');
+    }
   </script>
 </body>
-<footer>
-  <!-- Footer remains as is -->
-</footer>
+</html>
