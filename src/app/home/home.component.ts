@@ -207,6 +207,10 @@ export class HomeComponent {
 	  {
         videoId: '	0714Y5zb17E',
         title: 'Spring Web MVC Book App'
+      },
+	  {
+        videoId: '	5h7PTu60m9g',
+        title: 'SpringBoot Data JPA'
       }
 	
 
