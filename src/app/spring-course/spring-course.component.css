@@ -79,3 +79,20 @@ header {
 .register-btn:hover {
     background-color: blue;
 }
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1px 0;
+    background-color: blue;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

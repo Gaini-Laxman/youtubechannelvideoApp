@@ -14,6 +14,10 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
+import { VideosComponent } from './videos/videos.component';
+import { DatabaseComponent } from './database/database.component';
+import { CloudComponent } from './cloud/cloud.component';
+import { ReactJsComponent } from './react-js/react-js.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { RegisterComponent } from './register/register.component';
     BlogComponent,
     AboutComponent,
     ContactComponent,
-    RegisterComponent
+    RegisterComponent,
+    VideosComponent,
+    DatabaseComponent,
+    CloudComponent,
+    ReactJsComponent
   ],
   imports: [
     BrowserModule,

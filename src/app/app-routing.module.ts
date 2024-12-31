@@ -12,9 +12,14 @@ import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
+import { VideosComponent } from './videos/videos.component';
+import { CloudComponent } from './cloud/cloud.component';
+import { DatabaseComponent } from './database/database.component';
+import { ReactJsComponent } from './react-js/react-js.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'videos', component: VideosComponent },
   { path: 'courses/java', component: JavaCourseComponent },
   { path: 'courses/html', component: HtmlCourseComponent },
   { path: 'register', component: RegisterComponent },
@@ -22,6 +27,9 @@ const routes: Routes = [
   { path: 'courses/angular', component: AngularCourseComponent },
   { path: 'courses/spring', component: SpringCourseComponent },
   { path: 'courses/springboot', component: SpringbootCourseComponent },
+  { path: 'courses/cloud', component: CloudComponent },
+  { path: 'courses/database', component: DatabaseComponent },
+  { path: 'courses/reactJs', component: ReactJsComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaFullstackGuru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="navbar" id="navbar">
+    <button class="toggle-btn" onclick="toggleSidebar()"><i class="fa fa-bars"></i></button>
+    <div class="logo-container">
+      <img src="favicon1.gif" alt="JavaFullstackGuru Logo">
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="icons">
+      <i class="fa fa-video-camera" title="Upload"></i>
+      <i class="fa fa-bell" title="Notifications"></i>
+      <i class="fa fa-user-circle" title="Profile"></i>
+    </div>
+  </div>
+
+  <!-- Scrolling Text -->
+  <div class="scrolling-text">
+    <span>Welcome to JavaFullstackGuru! Stay updated with our latest content on Java, Full Stack Development, Contact More Details Ph: 9392291718 !</span>
+  </div>
+
+
+  <h1>YouTube Video List</h1>
+
+<div class="video-list">
+  <div class="video-card" *ngFor="let video of videos">
+    <h3>{{ video.title }}</h3>
+    <iframe
+      width="250"
+      height="140"
+      [src]="'https://www.youtube.com/embed/' + video.videoId | safeUrl"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
