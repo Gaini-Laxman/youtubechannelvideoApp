@@ -211,6 +211,10 @@ export class VideosComponent {
 	  {
         videoId: '	5h7PTu60m9g',
         title: 'SpringBoot Data JPA'
+      },
+	  {
+        videoId: '	F2AL9KoZ8Fo',
+        title: 'Spring Schedule'
       }
 	
 
