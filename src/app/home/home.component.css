@@ -69,7 +69,7 @@
 
 /* Sidebar Styling */
 .sidebar {
-  width: 50px;
+  width: 40px;
   background-color: blue;
   color: white;
   height: 100vh;
@@ -162,7 +162,7 @@
 
 .sidebar i {
   margin-right: 10px; /* Adds space between the icon and text */
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .sidebar .dropdown-content a {
