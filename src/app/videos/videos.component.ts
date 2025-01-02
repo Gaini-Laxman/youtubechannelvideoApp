@@ -215,6 +215,10 @@ export class VideosComponent {
 	  {
         videoId: '	F2AL9KoZ8Fo',
         title: 'Spring Schedule'
+      },
+	  {
+        videoId: '	FJEsYJoWAcw',
+        title: 'Spring Security'
       }
 	
 
