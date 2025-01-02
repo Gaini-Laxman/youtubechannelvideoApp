@@ -12,10 +12,200 @@
 <html>
 <h1>
    <meta name="google-adsense-account" content="ca-pub-6557551457522385">
-    CSS
 </h1>
 
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .css-course-container {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: #34495e;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .example-section {
+      margin-top: 20px;
+      background-color: #eef;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .example-box {
+      width: 200px;
+      height: 100px;
+      margin: 10px auto;
+      background-color: #3498db;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      font-weight: bold;
+      border: 2px solid #2980b9;
+    }
+
+    .color-box {
+      width: 100px;
+      height: 50px;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .red { background-color: red; }
+    .green { background-color: green; }
+    .blue { background-color: blue; }
+    .yellow { background-color: yellow; }
+
+    button {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 20px auto;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    /* Keyframes for Animation */
+    @keyframes exampleAnimation {
+      0% { background-color: red; }
+      50% { background-color: yellow; }
+      100% { background-color: green; }
+    }
+
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: exampleAnimation 3s infinite;
+      margin: 10px auto;
+    }
+
+    /* Grid Example */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .grid-item {
+      background-color: #8e44ad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .css-course-container {
+        padding: 15px;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="css-course-container">
+    <h1>Welcome to the CSS Basics Course</h1>
+    <p>
+      Learn the fundamentals of CSS to style your web pages effectively!
+    </p>
+
+    <h2>Topics Covered</h2>
+    <ul>
+      <li><strong>Selectors:</strong> Target specific HTML elements.</li>
+      <li><strong>Properties:</strong> Adjust colors, fonts, margins, and more.</li>
+      <li><strong>Box Model:</strong> Understand content, padding, border, and margin.</li>
+      <li><strong>Flexbox:</strong> Simplify layout alignment.</li>
+      <li><strong>Colors:</strong> Apply and mix colors.</li>
+      <li><strong>Transitions and Animations:</strong> Add movement and interactivity.</li>
+      <li><strong>Media Queries:</strong> Make designs responsive.</li>
+      <li><strong>Grid Layout:</strong> Create complex layouts easily.</li>
+    </ul>
+
+    <div class="example-section">
+      <h3>Colors</h3>
+      <p>CSS allows you to apply and mix colors using names, hex, rgb, or hsl values:</p>
+      <div class="color-box red"></div>
+      <div class="color-box green"></div>
+      <div class="color-box blue"></div>
+      <div class="color-box yellow"></div>
+    </div>
+
+    <div class="example-section">
+      <h3>Transitions and Animations</h3>
+      <p>Add animations to your elements using CSS:</p>
+      <div class="animated-box"></div>
+    </div>
+
+    <div class="example-section">
+      <h3>Grid Layout</h3>
+      <p>Use CSS Grid to arrange elements:</p>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
 
 <footer>
     <p>&copy; 2025 JavaFullstackGuru. All rights reserved.</p>

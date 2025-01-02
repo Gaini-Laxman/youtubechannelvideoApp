@@ -18,6 +18,8 @@ import { VideosComponent } from './videos/videos.component';
 import { DatabaseComponent } from './database/database.component';
 import { CloudComponent } from './cloud/cloud.component';
 import { ReactJsComponent } from './react-js/react-js.component';
+import { PythonComponent } from './python/python.component';
+import { FlaskComponent } from './flask/flask.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ReactJsComponent } from './react-js/react-js.component';
     VideosComponent,
     DatabaseComponent,
     CloudComponent,
-    ReactJsComponent
+    ReactJsComponent,
+    PythonComponent,
+    FlaskComponent
   ],
   imports: [
     BrowserModule,

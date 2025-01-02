@@ -16,6 +16,8 @@ import { VideosComponent } from './videos/videos.component';
 import { CloudComponent } from './cloud/cloud.component';
 import { DatabaseComponent } from './database/database.component';
 import { ReactJsComponent } from './react-js/react-js.component';
+import { PythonComponent } from './python/python.component';
+import { FlaskComponent } from './flask/flask.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'courses/cloud', component: CloudComponent },
   { path: 'courses/database', component: DatabaseComponent },
   { path: 'courses/reactJs', component: ReactJsComponent },
+  { path: 'courses/python', component: PythonComponent },
+  { path: 'courses/flask', component : FlaskComponent},
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },

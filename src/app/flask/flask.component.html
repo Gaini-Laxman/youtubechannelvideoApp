@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<header>
+    <div class="header-content">
+        <h1>Flask</h1>
+        <div class="course-info">
+            <p class="Course-Fee">Course Fee : ₹1299.0 </p>
+            <a href="https://rzp.io/rzp/BXvTOkpr" target="_blank">
+                <button class="buy-now-btn">Buy Now</button>
+            </a>
+            <button class="register-btn" (click)="navigateToRegister()">Register</button>
+
+        </div>
+    </div>
+</header>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flask Basics Course</title>
+  
+</head>
+<body>
+  <div class="flask-course-container">
+    <h1>Welcome to the Flask Basics Course</h1>
+    <p>
+      Flask is a lightweight and flexible web framework in Python. It is easy to learn and used for creating web applications, APIs, and more.
+    </p>
+
+    <h2>Topics Covered</h2>
+    <ul>
+      <li><strong>Installing Flask:</strong> Setting up your environment.</li>
+      <li><strong>Routes:</strong> Handling URLs and views.</li>
+      <li><strong>Templates:</strong> Dynamic HTML with Jinja2.</li>
+      <li><strong>Forms:</strong> Handling user input.</li>
+      <li><strong>Database Integration:</strong> Connecting to a database.</li>
+    </ul>
+
+    <div class="example-section">
+      <h3>Installing Flask</h3>
+      <p>Install Flask using pip:</p>
+      <pre><code>
+# Install Flask
+pip install flask
+      </code></pre>
+    </div>
+
+    <div class="example-section">
+      <h3>Basic Route</h3>
+      <p>Define a simple route in Flask:</p>
+      <pre><code>
+from flask import Flask
+
+app = Flask(__name__)
+
+&#64;app.route(&#39;/&#39;)
+def home():
+    return "{{ 'Hello, Flask!' }}"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+      </code></pre>
+    </div>
+
+    <div class="example-section">
+      <h3>Using Templates</h3>
+      <p>Render dynamic HTML using templates:</p>
+      <pre><code>
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+&#64;app.route(&#39;/&#39;)
+def home():
+    return render_template(&#39;index.html&#39;, name=&#39;Flask&#39;)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+      </code></pre>
+    </div>
+    
+    <div class="example-section">
+      <h3>Forms</h3>
+      <p>Handling form data in Flask:</p>
+      <pre><code>
+from flask import Flask, request
+
+app = Flask(__name__)
+
+&#64;app.route(&#39;/submit&#39;, methods=[&#39;POST&#39;])
+def submit():
+    name = request.form[&#39;name&#39;]
+    return f&quot;Hello, {{name}}!&quot;
+
+if __name__ == '__main__':
+    app.run(debug=True)
+      </code></pre>
+    </div>
+
+    <div class="example-section">
+      <h3>Database Integration</h3>
+      <p>Connecting Flask to a database:</p>
+      <pre><code>
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config[&#39;SQLALCHEMY_DATABASE_URI&#39;] = &#39;sqlite:///example.db&#39;
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), nullable=False)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+      </code></pre>
+    </div>
+  </div>
+</body>
+</html>
+
+<footer class="database-footer">
+    <p>&copy; 2025 JavaFullStackGuru All rights reserved.</p>
+    <p>Contact Us : <a href="mailto:gainilaxman2@gmail.com">gainilaxman2&#64;gmail.com</a> | Phone Number : <a href="tel:+9392291718" style="color: #f2f2f2;">+91 9392291718</a></p>
+  </footer>
+
