@@ -166,7 +166,7 @@
     /* Scrolling Text */
     .scrolling-text {
       position: fixed;
-      bottom: 10px;
+      bottom: 0px;
       left: 0;
       width: 100%;
       background-color: blue;
