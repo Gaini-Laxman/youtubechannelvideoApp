@@ -219,6 +219,10 @@ export class VideosComponent {
 	  {
         videoId: '	FJEsYJoWAcw',
         title: 'Spring Security'
+      },
+	  {
+        videoId: '	X8QAvRnsFd4',
+        title: 'Spring Security Auth2.0'
       }
 	
 
