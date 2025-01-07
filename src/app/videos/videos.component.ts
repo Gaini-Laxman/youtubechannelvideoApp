@@ -227,6 +227,10 @@ export class VideosComponent {
 	  {
         videoId: '	6fhtg9dSpgk',
         title: 'Spring Security Jwt'
+      },
+	  {
+        videoId: '	VdTFMqj75og',
+        title: 'Spring Boot'
       }
 	
 
