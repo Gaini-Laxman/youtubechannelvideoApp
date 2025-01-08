@@ -231,6 +231,10 @@ export class VideosComponent {
 	  {
         videoId: '	VdTFMqj75og',
         title: 'Spring Boot'
+      },
+	  {
+        videoId: '	FnHT5cSjSL8',
+        title: 'Project Lombok'
       }
 	
 
