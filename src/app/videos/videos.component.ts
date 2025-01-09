@@ -235,6 +235,10 @@ export class VideosComponent {
 	  {
         videoId: '	FnHT5cSjSL8',
         title: 'Project Lombok'
+      },
+	  {
+        videoId: '	YVQYMyv-Tto',
+        title: 'Maven'
       }
 	
 
