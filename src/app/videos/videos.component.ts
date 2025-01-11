@@ -243,6 +243,10 @@ export class VideosComponent {
 	  {
         videoId: 'EsrxjpjxJUM',
         title: 'Maven Installation'
+      },
+	  {
+        videoId: 'MzrFK_qUmvI',
+        title: 'Maven Terminology'
       }
 	
 
