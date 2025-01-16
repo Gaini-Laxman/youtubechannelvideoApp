@@ -251,6 +251,10 @@ export class VideosComponent {
 	  {
         videoId: 'Esfk-Adg5co',
         title: 'Maven Repository Types'
+      },
+	  {
+        videoId: 'hTvREg1HKv8',
+        title: 'Maven'
       }
 	
 
