@@ -259,6 +259,10 @@ export class VideosComponent {
 	  {
         videoId: 'xL2TYCiELJ8',
         title: 'JUnit5'
+      },
+	  {
+        videoId: 'aS87jUJOa_4',
+        title: 'JUnit'
       }
 	
 
