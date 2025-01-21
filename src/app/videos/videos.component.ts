@@ -263,10 +263,13 @@ export class VideosComponent {
 	  {
         videoId: 'aS87jUJOa_4',
         title: 'JUnit'
+      },
+	  {
+        videoId: '_0Vkzvk1WG8',
+        title: 'Code coverage'
       }
 	
 
-	
   ];
 
 }
