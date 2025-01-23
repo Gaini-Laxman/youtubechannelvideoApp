@@ -267,6 +267,10 @@ export class VideosComponent {
 	  {
         videoId: '_0Vkzvk1WG8',
         title: 'Code coverage'
+      },
+	  {
+        videoId: '0cnCh1y8IWg',
+        title: 'Angular ES1'
       }
 	
 
