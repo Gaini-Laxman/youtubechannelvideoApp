@@ -271,6 +271,10 @@ export class VideosComponent {
 	  {
         videoId: '0cnCh1y8IWg',
         title: 'Angular ES1'
+      },
+	  {
+        videoId: 'EZfZE8O21OM',
+        title: 'Angular ES2'
       }
 	
 
